@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from tastypie.api import Api
-from Logs.web_api import tempLogResourse
+from Logs.web_api import tempLogResourse,usageLogResourse
 
 v1_api = Api(api_name='v1')
 v1_api.register(tempLogResourse())
+v1_api.register(usageLogResourse())
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

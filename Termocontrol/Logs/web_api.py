@@ -4,7 +4,14 @@ from .models import usageLog, tempLog
 
 class tempLogResourse(ModelResource):
     class Meta:
-        always_return_data = True
         queryset = tempLog.objects.all()
         resource_name = 'templogs'
+        #todo: implement autorization
+        authorization = Authorization()
+
+class usageLogResourse(ModelResource):
+    class Meta:
+        queryset = usageLog.objects.all()
+        resource_name = "usagelogs"
+        #todo: Implement autorization
         authorization = Authorization()
