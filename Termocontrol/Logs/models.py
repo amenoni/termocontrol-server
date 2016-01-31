@@ -4,7 +4,7 @@ from django.db import models
 
 class tempLog(models.Model):
     timestamp_UTC = models.DateTimeField()
-    temp = models.IntegerField()
+    temp = models.FloatField()
 
 
 class usageLog(models.Model):
