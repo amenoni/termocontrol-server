@@ -1,0 +1,8 @@
+defusedxml==0.4.1
+Django==1.9.1
+django-tastypie==0.13.1
+python-dateutil==2.4.2
+python-mimeparse==0.1.4
+PyYAML==3.11
+six==1.10.0
+wheel==0.24.0
