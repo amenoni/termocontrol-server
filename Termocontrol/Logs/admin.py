@@ -13,4 +13,4 @@ class usageLogAdmin(admin.ModelAdmin):
 
 
 admin.site.register(tempLog,tempLogAdmin)
-admin.site.register(usageLog)
+admin.site.register(usageLog,usageLogAdmin)
