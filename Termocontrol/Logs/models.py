@@ -7,7 +7,7 @@ class tempLog(models.Model):
     temp = models.FloatField()
 
     def __unicode__(self):
-        return self.pk
+        return srt(self.pk)
 
 
 class usageLog(models.Model):
@@ -19,4 +19,4 @@ class usageLog(models.Model):
     type = models.CharField(max_length=2,choices=type_choices,default='nd')
 
     def __unicode__(self):
-        return self.pk
+        return srt(self.pk)
