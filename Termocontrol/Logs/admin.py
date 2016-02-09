@@ -4,12 +4,12 @@ from .models import tempLog, usageLog
 
 
 class tempLogAdmin(admin.ModelAdmin):
-    list_display = ('pk','timestamp_UTC','temp')
-    list_filter = ('timestamp_UTC',)
+    list_display = ('pk','timestamp','temp')
+    list_filter = ('timestamp',)
 
 class usageLogAdmin(admin.ModelAdmin):
-    list_display = ('pk','timestamp_UTC','weekday','hour','type',)
-    list_filter = ('timestamp_UTC','weekday','hour','type')
+    list_display = ('pk','timestamp','weekday','hour','type',)
+    list_filter = ('timestamp','weekday','hour','type')
 
 
 admin.site.register(tempLog,tempLogAdmin)
